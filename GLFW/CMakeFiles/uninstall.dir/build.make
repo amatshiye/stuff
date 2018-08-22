@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /goinfre/amatshiy/.brew/Cellar/cmake/3.12.0/bin/cmake
+CMAKE_COMMAND = /goinfre/amatshiy/.brew/Cellar/cmake/3.12.1/bin/cmake
 
 # The command to remove a file.
-RM = /goinfre/amatshiy/.brew/Cellar/cmake/3.12.0/bin/cmake -E remove -f
+RM = /goinfre/amatshiy/.brew/Cellar/cmake/3.12.1/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /goinfre/amatshiy/Desktop/glfw_tuts/GLFW
+CMAKE_SOURCE_DIR = /goinfre/amatshiy/Desktop/stuff/GLFW
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /goinfre/amatshiy/Desktop/glfw_tuts/GLFW
+CMAKE_BINARY_DIR = /goinfre/amatshiy/Desktop/stuff/GLFW
 
 # Utility rule file for uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /goinfre/amatshiy/Desktop/glfw_tuts/GLFW
 include CMakeFiles/uninstall.dir/progress.make
 
 CMakeFiles/uninstall:
-	/goinfre/amatshiy/.brew/Cellar/cmake/3.12.0/bin/cmake -P /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/cmake_uninstall.cmake
+	/goinfre/amatshiy/.brew/Cellar/cmake/3.12.1/bin/cmake -P /goinfre/amatshiy/Desktop/stuff/GLFW/cmake_uninstall.cmake
 
 uninstall: CMakeFiles/uninstall
 uninstall: CMakeFiles/uninstall.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /goinfre/amatshiy/Desktop/glfw_tuts/GLFW /goinfre/amatshiy/Desktop/glfw_tuts/GLFW /goinfre/amatshiy/Desktop/glfw_tuts/GLFW /goinfre/amatshiy/Desktop/glfw_tuts/GLFW /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /goinfre/amatshiy/Desktop/stuff/GLFW /goinfre/amatshiy/Desktop/stuff/GLFW /goinfre/amatshiy/Desktop/stuff/GLFW /goinfre/amatshiy/Desktop/stuff/GLFW /goinfre/amatshiy/Desktop/stuff/GLFW/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

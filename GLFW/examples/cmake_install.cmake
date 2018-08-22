@@ -1,4 +1,4 @@
-# Install script for directory: /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/examples
+# Install script for directory: /goinfre/amatshiy/Desktop/stuff/GLFW/examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

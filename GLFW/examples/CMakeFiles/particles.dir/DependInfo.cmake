@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/deps/getopt.c" "/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/examples/CMakeFiles/particles.dir/__/deps/getopt.c.o"
-  "/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/deps/glad.c" "/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/examples/CMakeFiles/particles.dir/__/deps/glad.c.o"
-  "/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/deps/tinycthread.c" "/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/examples/CMakeFiles/particles.dir/__/deps/tinycthread.c.o"
-  "/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/examples/particles.c" "/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/examples/CMakeFiles/particles.dir/particles.c.o"
+  "/goinfre/amatshiy/Desktop/stuff/GLFW/deps/getopt.c" "/goinfre/amatshiy/Desktop/stuff/GLFW/examples/CMakeFiles/particles.dir/__/deps/getopt.c.o"
+  "/goinfre/amatshiy/Desktop/stuff/GLFW/deps/glad.c" "/goinfre/amatshiy/Desktop/stuff/GLFW/examples/CMakeFiles/particles.dir/__/deps/glad.c.o"
+  "/goinfre/amatshiy/Desktop/stuff/GLFW/deps/tinycthread.c" "/goinfre/amatshiy/Desktop/stuff/GLFW/examples/CMakeFiles/particles.dir/__/deps/tinycthread.c.o"
+  "/goinfre/amatshiy/Desktop/stuff/GLFW/examples/particles.c" "/goinfre/amatshiy/Desktop/stuff/GLFW/examples/CMakeFiles/particles.dir/particles.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
@@ -19,7 +19,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "/goinfre/amatshiy/Desktop/stuff/GLFW/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

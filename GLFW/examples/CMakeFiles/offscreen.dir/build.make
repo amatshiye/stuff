@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /goinfre/amatshiy/.brew/Cellar/cmake/3.12.0/bin/cmake
+CMAKE_COMMAND = /goinfre/amatshiy/.brew/Cellar/cmake/3.12.1/bin/cmake
 
 # The command to remove a file.
-RM = /goinfre/amatshiy/.brew/Cellar/cmake/3.12.0/bin/cmake -E remove -f
+RM = /goinfre/amatshiy/.brew/Cellar/cmake/3.12.1/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /goinfre/amatshiy/Desktop/glfw_tuts/GLFW
+CMAKE_SOURCE_DIR = /goinfre/amatshiy/Desktop/stuff/GLFW
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /goinfre/amatshiy/Desktop/glfw_tuts/GLFW
+CMAKE_BINARY_DIR = /goinfre/amatshiy/Desktop/stuff/GLFW
 
 # Include any dependencies generated for this target.
 include examples/CMakeFiles/offscreen.dir/depend.make
@@ -59,29 +59,29 @@ include examples/CMakeFiles/offscreen.dir/flags.make
 
 examples/CMakeFiles/offscreen.dir/offscreen.c.o: examples/CMakeFiles/offscreen.dir/flags.make
 examples/CMakeFiles/offscreen.dir/offscreen.c.o: examples/offscreen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/offscreen.dir/offscreen.c.o"
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/offscreen.dir/offscreen.c.o   -c /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/examples/offscreen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/goinfre/amatshiy/Desktop/stuff/GLFW/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object examples/CMakeFiles/offscreen.dir/offscreen.c.o"
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/offscreen.dir/offscreen.c.o   -c /goinfre/amatshiy/Desktop/stuff/GLFW/examples/offscreen.c
 
 examples/CMakeFiles/offscreen.dir/offscreen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/offscreen.dir/offscreen.c.i"
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/examples/offscreen.c > CMakeFiles/offscreen.dir/offscreen.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /goinfre/amatshiy/Desktop/stuff/GLFW/examples/offscreen.c > CMakeFiles/offscreen.dir/offscreen.c.i
 
 examples/CMakeFiles/offscreen.dir/offscreen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/offscreen.dir/offscreen.c.s"
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/examples/offscreen.c -o CMakeFiles/offscreen.dir/offscreen.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /goinfre/amatshiy/Desktop/stuff/GLFW/examples/offscreen.c -o CMakeFiles/offscreen.dir/offscreen.c.s
 
 examples/CMakeFiles/offscreen.dir/__/deps/glad.c.o: examples/CMakeFiles/offscreen.dir/flags.make
 examples/CMakeFiles/offscreen.dir/__/deps/glad.c.o: deps/glad.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object examples/CMakeFiles/offscreen.dir/__/deps/glad.c.o"
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/offscreen.dir/__/deps/glad.c.o   -c /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/deps/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/goinfre/amatshiy/Desktop/stuff/GLFW/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object examples/CMakeFiles/offscreen.dir/__/deps/glad.c.o"
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/offscreen.dir/__/deps/glad.c.o   -c /goinfre/amatshiy/Desktop/stuff/GLFW/deps/glad.c
 
 examples/CMakeFiles/offscreen.dir/__/deps/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/offscreen.dir/__/deps/glad.c.i"
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/deps/glad.c > CMakeFiles/offscreen.dir/__/deps/glad.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /goinfre/amatshiy/Desktop/stuff/GLFW/deps/glad.c > CMakeFiles/offscreen.dir/__/deps/glad.c.i
 
 examples/CMakeFiles/offscreen.dir/__/deps/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/offscreen.dir/__/deps/glad.c.s"
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/deps/glad.c -o CMakeFiles/offscreen.dir/__/deps/glad.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW/examples && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /goinfre/amatshiy/Desktop/stuff/GLFW/deps/glad.c -o CMakeFiles/offscreen.dir/__/deps/glad.c.s
 
 # Object files for target offscreen
 offscreen_OBJECTS = \
@@ -96,8 +96,8 @@ examples/offscreen: examples/CMakeFiles/offscreen.dir/__/deps/glad.c.o
 examples/offscreen: examples/CMakeFiles/offscreen.dir/build.make
 examples/offscreen: src/libglfw3.a
 examples/offscreen: examples/CMakeFiles/offscreen.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable offscreen"
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/offscreen.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/goinfre/amatshiy/Desktop/stuff/GLFW/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable offscreen"
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/offscreen.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 examples/CMakeFiles/offscreen.dir/build: examples/offscreen
@@ -105,10 +105,10 @@ examples/CMakeFiles/offscreen.dir/build: examples/offscreen
 .PHONY : examples/CMakeFiles/offscreen.dir/build
 
 examples/CMakeFiles/offscreen.dir/clean:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/examples && $(CMAKE_COMMAND) -P CMakeFiles/offscreen.dir/cmake_clean.cmake
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW/examples && $(CMAKE_COMMAND) -P CMakeFiles/offscreen.dir/cmake_clean.cmake
 .PHONY : examples/CMakeFiles/offscreen.dir/clean
 
 examples/CMakeFiles/offscreen.dir/depend:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /goinfre/amatshiy/Desktop/glfw_tuts/GLFW /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/examples /goinfre/amatshiy/Desktop/glfw_tuts/GLFW /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/examples /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/examples/CMakeFiles/offscreen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /goinfre/amatshiy/Desktop/stuff/GLFW /goinfre/amatshiy/Desktop/stuff/GLFW/examples /goinfre/amatshiy/Desktop/stuff/GLFW /goinfre/amatshiy/Desktop/stuff/GLFW/examples /goinfre/amatshiy/Desktop/stuff/GLFW/examples/CMakeFiles/offscreen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : examples/CMakeFiles/offscreen.dir/depend
 

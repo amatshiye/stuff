@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/deps/getopt.c
+/goinfre/amatshiy/Desktop/stuff/GLFW/deps/getopt.c
 getopt.h
-/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/deps/getopt.h
+/goinfre/amatshiy/Desktop/stuff/GLFW/deps/getopt.h
 stddef.h
 -
 string.h
 -
 
-/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/deps/getopt.h
+/goinfre/amatshiy/Desktop/stuff/GLFW/deps/getopt.h
 
-/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/deps/glad.c
+/goinfre/amatshiy/Desktop/stuff/GLFW/deps/glad.c
 stdio.h
 -
 stdlib.h
@@ -26,9 +26,9 @@ string.h
 glad/glad.h
 -
 
-/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/deps/tinycthread.c
+/goinfre/amatshiy/Desktop/stuff/GLFW/deps/tinycthread.c
 tinycthread.h
-/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/deps/tinycthread.h
+/goinfre/amatshiy/Desktop/stuff/GLFW/deps/tinycthread.h
 stdlib.h
 -
 signal.h
@@ -46,7 +46,7 @@ process.h
 sys/timeb.h
 -
 
-/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/deps/tinycthread.h
+/goinfre/amatshiy/Desktop/stuff/GLFW/deps/tinycthread.h
 time.h
 -
 sys/time.h
@@ -56,7 +56,7 @@ pthread.h
 windows.h
 -
 
-/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/examples/particles.c
+/goinfre/amatshiy/Desktop/stuff/GLFW/examples/particles.c
 stdlib.h
 -
 stdio.h

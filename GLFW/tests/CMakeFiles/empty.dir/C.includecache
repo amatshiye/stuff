@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/deps/glad.c
+/goinfre/amatshiy/Desktop/stuff/GLFW/deps/glad.c
 stdio.h
 -
 stdlib.h
@@ -16,9 +16,9 @@ string.h
 glad/glad.h
 -
 
-/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/deps/tinycthread.c
+/goinfre/amatshiy/Desktop/stuff/GLFW/deps/tinycthread.c
 tinycthread.h
-/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/deps/tinycthread.h
+/goinfre/amatshiy/Desktop/stuff/GLFW/deps/tinycthread.h
 stdlib.h
 -
 signal.h
@@ -36,7 +36,7 @@ process.h
 sys/timeb.h
 -
 
-/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/deps/tinycthread.h
+/goinfre/amatshiy/Desktop/stuff/GLFW/deps/tinycthread.h
 time.h
 -
 sys/time.h
@@ -46,9 +46,9 @@ pthread.h
 windows.h
 -
 
-/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/tests/empty.c
+/goinfre/amatshiy/Desktop/stuff/GLFW/tests/empty.c
 tinycthread.h
-/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/tests/tinycthread.h
+/goinfre/amatshiy/Desktop/stuff/GLFW/tests/tinycthread.h
 glad/glad.h
 -
 GLFW/glfw3.h

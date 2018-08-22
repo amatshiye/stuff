@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/deps/glad.c
+/goinfre/amatshiy/Desktop/stuff/GLFW/deps/glad.c
 stdio.h
 -
 stdlib.h
@@ -16,7 +16,7 @@ string.h
 glad/glad.h
 -
 
-/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/tests/cursor.c
+/goinfre/amatshiy/Desktop/stuff/GLFW/tests/cursor.c
 glad/glad.h
 -
 GLFW/glfw3.h
@@ -28,7 +28,7 @@ stdio.h
 stdlib.h
 -
 linmath.h
-/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/tests/linmath.h
+/goinfre/amatshiy/Desktop/stuff/GLFW/tests/linmath.h
 
 deps/KHR/khrplatform.h
 stdint.h

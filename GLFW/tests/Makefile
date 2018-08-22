@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /goinfre/amatshiy/.brew/Cellar/cmake/3.12.0/bin/cmake
+CMAKE_COMMAND = /goinfre/amatshiy/.brew/Cellar/cmake/3.12.1/bin/cmake
 
 # The command to remove a file.
-RM = /goinfre/amatshiy/.brew/Cellar/cmake/3.12.0/bin/cmake -E remove -f
+RM = /goinfre/amatshiy/.brew/Cellar/cmake/3.12.1/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /goinfre/amatshiy/Desktop/glfw_tuts/GLFW
+CMAKE_SOURCE_DIR = /goinfre/amatshiy/Desktop/stuff/GLFW
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /goinfre/amatshiy/Desktop/glfw_tuts/GLFW
+CMAKE_BINARY_DIR = /goinfre/amatshiy/Desktop/stuff/GLFW
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,19 +59,19 @@ CMAKE_BINARY_DIR = /goinfre/amatshiy/Desktop/glfw_tuts/GLFW
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/goinfre/amatshiy/.brew/Cellar/cmake/3.12.0/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/goinfre/amatshiy/.brew/Cellar/cmake/3.12.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/goinfre/amatshiy/.brew/Cellar/cmake/3.12.0/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/goinfre/amatshiy/.brew/Cellar/cmake/3.12.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/goinfre/amatshiy/.brew/Cellar/cmake/3.12.0/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/goinfre/amatshiy/.brew/Cellar/cmake/3.12.1/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -82,31 +82,31 @@ edit_cache/fast: edit_cache
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/goinfre/amatshiy/.brew/Cellar/cmake/3.12.0/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/goinfre/amatshiy/.brew/Cellar/cmake/3.12.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/goinfre/amatshiy/.brew/Cellar/cmake/3.12.0/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/goinfre/amatshiy/.brew/Cellar/cmake/3.12.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/goinfre/amatshiy/.brew/Cellar/cmake/3.12.0/bin/cmake -P cmake_install.cmake
+	/goinfre/amatshiy/.brew/Cellar/cmake/3.12.1/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/goinfre/amatshiy/.brew/Cellar/cmake/3.12.0/bin/cmake -P cmake_install.cmake
+	/goinfre/amatshiy/.brew/Cellar/cmake/3.12.1/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/goinfre/amatshiy/.brew/Cellar/cmake/3.12.0/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/goinfre/amatshiy/.brew/Cellar/cmake/3.12.1/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -126,14 +126,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(CMAKE_COMMAND) -E cmake_progress_start /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/CMakeFiles /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/tests/CMakeFiles/progress.marks
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/CMakeFiles 0
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(CMAKE_COMMAND) -E cmake_progress_start /goinfre/amatshiy/Desktop/stuff/GLFW/CMakeFiles /goinfre/amatshiy/Desktop/stuff/GLFW/tests/CMakeFiles/progress.marks
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /goinfre/amatshiy/Desktop/stuff/GLFW/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/clipboard.dir/rule:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/clipboard.dir/rule
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/clipboard.dir/rule
 .PHONY : tests/CMakeFiles/clipboard.dir/rule
 
 # Convenience name for target.
@@ -168,12 +168,12 @@ clipboard: tests/CMakeFiles/clipboard.dir/rule
 
 # fast build rule for target.
 clipboard/fast:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/build
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/build
 .PHONY : clipboard/fast
 
 # Convenience name for target.
 tests/CMakeFiles/title.dir/rule:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/title.dir/rule
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/title.dir/rule
 .PHONY : tests/CMakeFiles/title.dir/rule
 
 # Convenience name for target.
@@ -183,12 +183,12 @@ title: tests/CMakeFiles/title.dir/rule
 
 # fast build rule for target.
 title/fast:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/build
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/build
 .PHONY : title/fast
 
 # Convenience name for target.
 tests/CMakeFiles/timeout.dir/rule:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/timeout.dir/rule
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/timeout.dir/rule
 .PHONY : tests/CMakeFiles/timeout.dir/rule
 
 # Convenience name for target.
@@ -198,12 +198,12 @@ timeout: tests/CMakeFiles/timeout.dir/rule
 
 # fast build rule for target.
 timeout/fast:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/build
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/build
 .PHONY : timeout/fast
 
 # Convenience name for target.
 tests/CMakeFiles/threads.dir/rule:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/threads.dir/rule
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/threads.dir/rule
 .PHONY : tests/CMakeFiles/threads.dir/rule
 
 # Convenience name for target.
@@ -213,12 +213,12 @@ threads: tests/CMakeFiles/threads.dir/rule
 
 # fast build rule for target.
 threads/fast:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/build
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/build
 .PHONY : threads/fast
 
 # Convenience name for target.
 tests/CMakeFiles/opacity.dir/rule:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/opacity.dir/rule
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/opacity.dir/rule
 .PHONY : tests/CMakeFiles/opacity.dir/rule
 
 # Convenience name for target.
@@ -228,12 +228,12 @@ opacity: tests/CMakeFiles/opacity.dir/rule
 
 # fast build rule for target.
 opacity/fast:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/build
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/build
 .PHONY : opacity/fast
 
 # Convenience name for target.
 tests/CMakeFiles/gamma.dir/rule:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/gamma.dir/rule
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/gamma.dir/rule
 .PHONY : tests/CMakeFiles/gamma.dir/rule
 
 # Convenience name for target.
@@ -243,12 +243,12 @@ gamma: tests/CMakeFiles/gamma.dir/rule
 
 # fast build rule for target.
 gamma/fast:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/build
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/build
 .PHONY : gamma/fast
 
 # Convenience name for target.
 tests/CMakeFiles/tearing.dir/rule:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/tearing.dir/rule
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/tearing.dir/rule
 .PHONY : tests/CMakeFiles/tearing.dir/rule
 
 # Convenience name for target.
@@ -258,12 +258,12 @@ tearing: tests/CMakeFiles/tearing.dir/rule
 
 # fast build rule for target.
 tearing/fast:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/build
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/build
 .PHONY : tearing/fast
 
 # Convenience name for target.
 tests/CMakeFiles/iconify.dir/rule:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/iconify.dir/rule
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/iconify.dir/rule
 .PHONY : tests/CMakeFiles/iconify.dir/rule
 
 # Convenience name for target.
@@ -273,12 +273,12 @@ iconify: tests/CMakeFiles/iconify.dir/rule
 
 # fast build rule for target.
 iconify/fast:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/build
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/build
 .PHONY : iconify/fast
 
 # Convenience name for target.
 tests/CMakeFiles/joysticks.dir/rule:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/joysticks.dir/rule
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/joysticks.dir/rule
 .PHONY : tests/CMakeFiles/joysticks.dir/rule
 
 # Convenience name for target.
@@ -288,12 +288,12 @@ joysticks: tests/CMakeFiles/joysticks.dir/rule
 
 # fast build rule for target.
 joysticks/fast:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/build
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/build
 .PHONY : joysticks/fast
 
 # Convenience name for target.
 tests/CMakeFiles/windows.dir/rule:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/windows.dir/rule
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/windows.dir/rule
 .PHONY : tests/CMakeFiles/windows.dir/rule
 
 # Convenience name for target.
@@ -303,12 +303,12 @@ windows: tests/CMakeFiles/windows.dir/rule
 
 # fast build rule for target.
 windows/fast:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/build
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/build
 .PHONY : windows/fast
 
 # Convenience name for target.
 tests/CMakeFiles/inputlag.dir/rule:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/inputlag.dir/rule
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/inputlag.dir/rule
 .PHONY : tests/CMakeFiles/inputlag.dir/rule
 
 # Convenience name for target.
@@ -318,12 +318,12 @@ inputlag: tests/CMakeFiles/inputlag.dir/rule
 
 # fast build rule for target.
 inputlag/fast:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/build
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/build
 .PHONY : inputlag/fast
 
 # Convenience name for target.
 tests/CMakeFiles/empty.dir/rule:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/empty.dir/rule
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/empty.dir/rule
 .PHONY : tests/CMakeFiles/empty.dir/rule
 
 # Convenience name for target.
@@ -333,12 +333,12 @@ empty: tests/CMakeFiles/empty.dir/rule
 
 # fast build rule for target.
 empty/fast:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/build
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/build
 .PHONY : empty/fast
 
 # Convenience name for target.
 tests/CMakeFiles/reopen.dir/rule:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/reopen.dir/rule
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/reopen.dir/rule
 .PHONY : tests/CMakeFiles/reopen.dir/rule
 
 # Convenience name for target.
@@ -348,12 +348,12 @@ reopen: tests/CMakeFiles/reopen.dir/rule
 
 # fast build rule for target.
 reopen/fast:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/build
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/build
 .PHONY : reopen/fast
 
 # Convenience name for target.
 tests/CMakeFiles/msaa.dir/rule:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/msaa.dir/rule
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/msaa.dir/rule
 .PHONY : tests/CMakeFiles/msaa.dir/rule
 
 # Convenience name for target.
@@ -363,12 +363,12 @@ msaa: tests/CMakeFiles/msaa.dir/rule
 
 # fast build rule for target.
 msaa/fast:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/build
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/build
 .PHONY : msaa/fast
 
 # Convenience name for target.
 tests/CMakeFiles/cursor.dir/rule:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/cursor.dir/rule
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/cursor.dir/rule
 .PHONY : tests/CMakeFiles/cursor.dir/rule
 
 # Convenience name for target.
@@ -378,12 +378,12 @@ cursor: tests/CMakeFiles/cursor.dir/rule
 
 # fast build rule for target.
 cursor/fast:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/build
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/build
 .PHONY : cursor/fast
 
 # Convenience name for target.
 tests/CMakeFiles/glfwinfo.dir/rule:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/glfwinfo.dir/rule
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/glfwinfo.dir/rule
 .PHONY : tests/CMakeFiles/glfwinfo.dir/rule
 
 # Convenience name for target.
@@ -393,12 +393,12 @@ glfwinfo: tests/CMakeFiles/glfwinfo.dir/rule
 
 # fast build rule for target.
 glfwinfo/fast:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/build
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/build
 .PHONY : glfwinfo/fast
 
 # Convenience name for target.
 tests/CMakeFiles/monitors.dir/rule:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/monitors.dir/rule
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/monitors.dir/rule
 .PHONY : tests/CMakeFiles/monitors.dir/rule
 
 # Convenience name for target.
@@ -408,12 +408,12 @@ monitors: tests/CMakeFiles/monitors.dir/rule
 
 # fast build rule for target.
 monitors/fast:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/build
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/build
 .PHONY : monitors/fast
 
 # Convenience name for target.
 tests/CMakeFiles/events.dir/rule:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/events.dir/rule
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/events.dir/rule
 .PHONY : tests/CMakeFiles/events.dir/rule
 
 # Convenience name for target.
@@ -423,12 +423,12 @@ events: tests/CMakeFiles/events.dir/rule
 
 # fast build rule for target.
 events/fast:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/build
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/build
 .PHONY : events/fast
 
 # Convenience name for target.
 tests/CMakeFiles/icon.dir/rule:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/icon.dir/rule
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/icon.dir/rule
 .PHONY : tests/CMakeFiles/icon.dir/rule
 
 # Convenience name for target.
@@ -438,7 +438,7 @@ icon: tests/CMakeFiles/icon.dir/rule
 
 # fast build rule for target.
 icon/fast:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/build
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/build
 .PHONY : icon/fast
 
 __/deps/getopt.o: __/deps/getopt.c.o
@@ -447,14 +447,14 @@ __/deps/getopt.o: __/deps/getopt.c.o
 
 # target to build an object file
 __/deps/getopt.c.o:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/getopt.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/getopt.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/getopt.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/getopt.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/getopt.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/getopt.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/getopt.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/getopt.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/getopt.c.o
 .PHONY : __/deps/getopt.c.o
 
 __/deps/getopt.i: __/deps/getopt.c.i
@@ -463,14 +463,14 @@ __/deps/getopt.i: __/deps/getopt.c.i
 
 # target to preprocess a source file
 __/deps/getopt.c.i:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/getopt.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/getopt.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/getopt.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/getopt.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/getopt.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/getopt.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/getopt.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/getopt.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/getopt.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/getopt.c.i
 .PHONY : __/deps/getopt.c.i
 
 __/deps/getopt.s: __/deps/getopt.c.s
@@ -479,14 +479,14 @@ __/deps/getopt.s: __/deps/getopt.c.s
 
 # target to generate assembly for a file
 __/deps/getopt.c.s:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/getopt.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/getopt.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/getopt.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/getopt.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/getopt.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/getopt.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/getopt.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/getopt.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/getopt.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/getopt.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/getopt.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/getopt.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/getopt.c.s
 .PHONY : __/deps/getopt.c.s
 
 __/deps/glad.o: __/deps/glad.c.o
@@ -495,25 +495,25 @@ __/deps/glad.o: __/deps/glad.c.o
 
 # target to build an object file
 __/deps/glad.c.o:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/glad.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/__/deps/glad.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/__/deps/glad.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/glad.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/__/deps/glad.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/__/deps/glad.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/__/deps/glad.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/glad.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/__/deps/glad.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/glad.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/glad.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/glad.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/__/deps/glad.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/glad.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/__/deps/glad.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/glad.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/glad.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/glad.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/__/deps/glad.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/glad.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/__/deps/glad.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/__/deps/glad.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/glad.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/__/deps/glad.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/__/deps/glad.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/__/deps/glad.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/glad.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/__/deps/glad.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/glad.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/glad.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/glad.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/__/deps/glad.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/glad.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/__/deps/glad.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/glad.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/glad.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/glad.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/__/deps/glad.c.o
 .PHONY : __/deps/glad.c.o
 
 __/deps/glad.i: __/deps/glad.c.i
@@ -522,25 +522,25 @@ __/deps/glad.i: __/deps/glad.c.i
 
 # target to preprocess a source file
 __/deps/glad.c.i:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/glad.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/__/deps/glad.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/__/deps/glad.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/glad.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/__/deps/glad.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/__/deps/glad.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/__/deps/glad.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/glad.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/__/deps/glad.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/glad.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/glad.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/glad.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/__/deps/glad.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/glad.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/__/deps/glad.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/glad.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/glad.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/glad.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/__/deps/glad.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/glad.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/__/deps/glad.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/__/deps/glad.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/glad.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/__/deps/glad.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/__/deps/glad.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/__/deps/glad.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/glad.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/__/deps/glad.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/glad.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/glad.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/glad.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/__/deps/glad.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/glad.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/__/deps/glad.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/glad.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/glad.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/glad.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/__/deps/glad.c.i
 .PHONY : __/deps/glad.c.i
 
 __/deps/glad.s: __/deps/glad.c.s
@@ -549,25 +549,25 @@ __/deps/glad.s: __/deps/glad.c.s
 
 # target to generate assembly for a file
 __/deps/glad.c.s:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/glad.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/__/deps/glad.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/__/deps/glad.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/glad.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/__/deps/glad.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/__/deps/glad.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/__/deps/glad.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/glad.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/__/deps/glad.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/glad.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/glad.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/glad.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/__/deps/glad.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/glad.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/__/deps/glad.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/glad.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/glad.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/glad.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/__/deps/glad.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/__/deps/glad.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/__/deps/glad.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/__/deps/glad.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/glad.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/__/deps/glad.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/__/deps/glad.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/__/deps/glad.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/__/deps/glad.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/__/deps/glad.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/__/deps/glad.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/__/deps/glad.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/glad.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/__/deps/glad.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/__/deps/glad.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/__/deps/glad.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/__/deps/glad.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/__/deps/glad.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/__/deps/glad.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/__/deps/glad.c.s
 .PHONY : __/deps/glad.c.s
 
 __/deps/tinycthread.o: __/deps/tinycthread.c.o
@@ -576,8 +576,8 @@ __/deps/tinycthread.o: __/deps/tinycthread.c.o
 
 # target to build an object file
 __/deps/tinycthread.c.o:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o
 .PHONY : __/deps/tinycthread.c.o
 
 __/deps/tinycthread.i: __/deps/tinycthread.c.i
@@ -586,8 +586,8 @@ __/deps/tinycthread.i: __/deps/tinycthread.c.i
 
 # target to preprocess a source file
 __/deps/tinycthread.c.i:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.i
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.i
 .PHONY : __/deps/tinycthread.c.i
 
 __/deps/tinycthread.s: __/deps/tinycthread.c.s
@@ -596,8 +596,8 @@ __/deps/tinycthread.s: __/deps/tinycthread.c.s
 
 # target to generate assembly for a file
 __/deps/tinycthread.c.s:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.s
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/__/deps/tinycthread.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.s
 .PHONY : __/deps/tinycthread.c.s
 
 clipboard.o: clipboard.c.o
@@ -606,7 +606,7 @@ clipboard.o: clipboard.c.o
 
 # target to build an object file
 clipboard.c.o:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/clipboard.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/clipboard.c.o
 .PHONY : clipboard.c.o
 
 clipboard.i: clipboard.c.i
@@ -615,7 +615,7 @@ clipboard.i: clipboard.c.i
 
 # target to preprocess a source file
 clipboard.c.i:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/clipboard.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/clipboard.c.i
 .PHONY : clipboard.c.i
 
 clipboard.s: clipboard.c.s
@@ -624,7 +624,7 @@ clipboard.s: clipboard.c.s
 
 # target to generate assembly for a file
 clipboard.c.s:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/clipboard.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/clipboard.dir/build.make tests/CMakeFiles/clipboard.dir/clipboard.c.s
 .PHONY : clipboard.c.s
 
 cursor.o: cursor.c.o
@@ -633,7 +633,7 @@ cursor.o: cursor.c.o
 
 # target to build an object file
 cursor.c.o:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/cursor.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/cursor.c.o
 .PHONY : cursor.c.o
 
 cursor.i: cursor.c.i
@@ -642,7 +642,7 @@ cursor.i: cursor.c.i
 
 # target to preprocess a source file
 cursor.c.i:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/cursor.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/cursor.c.i
 .PHONY : cursor.c.i
 
 cursor.s: cursor.c.s
@@ -651,7 +651,7 @@ cursor.s: cursor.c.s
 
 # target to generate assembly for a file
 cursor.c.s:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/cursor.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/cursor.dir/build.make tests/CMakeFiles/cursor.dir/cursor.c.s
 .PHONY : cursor.c.s
 
 empty.o: empty.c.o
@@ -660,7 +660,7 @@ empty.o: empty.c.o
 
 # target to build an object file
 empty.c.o:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/empty.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/empty.c.o
 .PHONY : empty.c.o
 
 empty.i: empty.c.i
@@ -669,7 +669,7 @@ empty.i: empty.c.i
 
 # target to preprocess a source file
 empty.c.i:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/empty.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/empty.c.i
 .PHONY : empty.c.i
 
 empty.s: empty.c.s
@@ -678,7 +678,7 @@ empty.s: empty.c.s
 
 # target to generate assembly for a file
 empty.c.s:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/empty.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/empty.dir/build.make tests/CMakeFiles/empty.dir/empty.c.s
 .PHONY : empty.c.s
 
 events.o: events.c.o
@@ -687,7 +687,7 @@ events.o: events.c.o
 
 # target to build an object file
 events.c.o:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/events.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/events.c.o
 .PHONY : events.c.o
 
 events.i: events.c.i
@@ -696,7 +696,7 @@ events.i: events.c.i
 
 # target to preprocess a source file
 events.c.i:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/events.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/events.c.i
 .PHONY : events.c.i
 
 events.s: events.c.s
@@ -705,7 +705,7 @@ events.s: events.c.s
 
 # target to generate assembly for a file
 events.c.s:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/events.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/events.dir/build.make tests/CMakeFiles/events.dir/events.c.s
 .PHONY : events.c.s
 
 gamma.o: gamma.c.o
@@ -714,7 +714,7 @@ gamma.o: gamma.c.o
 
 # target to build an object file
 gamma.c.o:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/gamma.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/gamma.c.o
 .PHONY : gamma.c.o
 
 gamma.i: gamma.c.i
@@ -723,7 +723,7 @@ gamma.i: gamma.c.i
 
 # target to preprocess a source file
 gamma.c.i:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/gamma.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/gamma.c.i
 .PHONY : gamma.c.i
 
 gamma.s: gamma.c.s
@@ -732,7 +732,7 @@ gamma.s: gamma.c.s
 
 # target to generate assembly for a file
 gamma.c.s:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/gamma.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/gamma.dir/build.make tests/CMakeFiles/gamma.dir/gamma.c.s
 .PHONY : gamma.c.s
 
 glfwinfo.o: glfwinfo.c.o
@@ -741,7 +741,7 @@ glfwinfo.o: glfwinfo.c.o
 
 # target to build an object file
 glfwinfo.c.o:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.o
 .PHONY : glfwinfo.c.o
 
 glfwinfo.i: glfwinfo.c.i
@@ -750,7 +750,7 @@ glfwinfo.i: glfwinfo.c.i
 
 # target to preprocess a source file
 glfwinfo.c.i:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.i
 .PHONY : glfwinfo.c.i
 
 glfwinfo.s: glfwinfo.c.s
@@ -759,7 +759,7 @@ glfwinfo.s: glfwinfo.c.s
 
 # target to generate assembly for a file
 glfwinfo.c.s:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/glfwinfo.dir/build.make tests/CMakeFiles/glfwinfo.dir/glfwinfo.c.s
 .PHONY : glfwinfo.c.s
 
 icon.o: icon.c.o
@@ -768,7 +768,7 @@ icon.o: icon.c.o
 
 # target to build an object file
 icon.c.o:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/icon.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/icon.c.o
 .PHONY : icon.c.o
 
 icon.i: icon.c.i
@@ -777,7 +777,7 @@ icon.i: icon.c.i
 
 # target to preprocess a source file
 icon.c.i:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/icon.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/icon.c.i
 .PHONY : icon.c.i
 
 icon.s: icon.c.s
@@ -786,7 +786,7 @@ icon.s: icon.c.s
 
 # target to generate assembly for a file
 icon.c.s:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/icon.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/icon.dir/build.make tests/CMakeFiles/icon.dir/icon.c.s
 .PHONY : icon.c.s
 
 iconify.o: iconify.c.o
@@ -795,7 +795,7 @@ iconify.o: iconify.c.o
 
 # target to build an object file
 iconify.c.o:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/iconify.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/iconify.c.o
 .PHONY : iconify.c.o
 
 iconify.i: iconify.c.i
@@ -804,7 +804,7 @@ iconify.i: iconify.c.i
 
 # target to preprocess a source file
 iconify.c.i:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/iconify.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/iconify.c.i
 .PHONY : iconify.c.i
 
 iconify.s: iconify.c.s
@@ -813,7 +813,7 @@ iconify.s: iconify.c.s
 
 # target to generate assembly for a file
 iconify.c.s:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/iconify.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/iconify.dir/build.make tests/CMakeFiles/iconify.dir/iconify.c.s
 .PHONY : iconify.c.s
 
 inputlag.o: inputlag.c.o
@@ -822,7 +822,7 @@ inputlag.o: inputlag.c.o
 
 # target to build an object file
 inputlag.c.o:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/inputlag.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/inputlag.c.o
 .PHONY : inputlag.c.o
 
 inputlag.i: inputlag.c.i
@@ -831,7 +831,7 @@ inputlag.i: inputlag.c.i
 
 # target to preprocess a source file
 inputlag.c.i:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/inputlag.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/inputlag.c.i
 .PHONY : inputlag.c.i
 
 inputlag.s: inputlag.c.s
@@ -840,7 +840,7 @@ inputlag.s: inputlag.c.s
 
 # target to generate assembly for a file
 inputlag.c.s:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/inputlag.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/inputlag.dir/build.make tests/CMakeFiles/inputlag.dir/inputlag.c.s
 .PHONY : inputlag.c.s
 
 joysticks.o: joysticks.c.o
@@ -849,7 +849,7 @@ joysticks.o: joysticks.c.o
 
 # target to build an object file
 joysticks.c.o:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/joysticks.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/joysticks.c.o
 .PHONY : joysticks.c.o
 
 joysticks.i: joysticks.c.i
@@ -858,7 +858,7 @@ joysticks.i: joysticks.c.i
 
 # target to preprocess a source file
 joysticks.c.i:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/joysticks.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/joysticks.c.i
 .PHONY : joysticks.c.i
 
 joysticks.s: joysticks.c.s
@@ -867,7 +867,7 @@ joysticks.s: joysticks.c.s
 
 # target to generate assembly for a file
 joysticks.c.s:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/joysticks.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/joysticks.dir/build.make tests/CMakeFiles/joysticks.dir/joysticks.c.s
 .PHONY : joysticks.c.s
 
 monitors.o: monitors.c.o
@@ -876,7 +876,7 @@ monitors.o: monitors.c.o
 
 # target to build an object file
 monitors.c.o:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/monitors.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/monitors.c.o
 .PHONY : monitors.c.o
 
 monitors.i: monitors.c.i
@@ -885,7 +885,7 @@ monitors.i: monitors.c.i
 
 # target to preprocess a source file
 monitors.c.i:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/monitors.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/monitors.c.i
 .PHONY : monitors.c.i
 
 monitors.s: monitors.c.s
@@ -894,7 +894,7 @@ monitors.s: monitors.c.s
 
 # target to generate assembly for a file
 monitors.c.s:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/monitors.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/monitors.dir/build.make tests/CMakeFiles/monitors.dir/monitors.c.s
 .PHONY : monitors.c.s
 
 msaa.o: msaa.c.o
@@ -903,7 +903,7 @@ msaa.o: msaa.c.o
 
 # target to build an object file
 msaa.c.o:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/msaa.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/msaa.c.o
 .PHONY : msaa.c.o
 
 msaa.i: msaa.c.i
@@ -912,7 +912,7 @@ msaa.i: msaa.c.i
 
 # target to preprocess a source file
 msaa.c.i:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/msaa.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/msaa.c.i
 .PHONY : msaa.c.i
 
 msaa.s: msaa.c.s
@@ -921,7 +921,7 @@ msaa.s: msaa.c.s
 
 # target to generate assembly for a file
 msaa.c.s:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/msaa.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/msaa.dir/build.make tests/CMakeFiles/msaa.dir/msaa.c.s
 .PHONY : msaa.c.s
 
 opacity.o: opacity.c.o
@@ -930,7 +930,7 @@ opacity.o: opacity.c.o
 
 # target to build an object file
 opacity.c.o:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/opacity.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/opacity.c.o
 .PHONY : opacity.c.o
 
 opacity.i: opacity.c.i
@@ -939,7 +939,7 @@ opacity.i: opacity.c.i
 
 # target to preprocess a source file
 opacity.c.i:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/opacity.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/opacity.c.i
 .PHONY : opacity.c.i
 
 opacity.s: opacity.c.s
@@ -948,7 +948,7 @@ opacity.s: opacity.c.s
 
 # target to generate assembly for a file
 opacity.c.s:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/opacity.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/opacity.dir/build.make tests/CMakeFiles/opacity.dir/opacity.c.s
 .PHONY : opacity.c.s
 
 reopen.o: reopen.c.o
@@ -957,7 +957,7 @@ reopen.o: reopen.c.o
 
 # target to build an object file
 reopen.c.o:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/reopen.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/reopen.c.o
 .PHONY : reopen.c.o
 
 reopen.i: reopen.c.i
@@ -966,7 +966,7 @@ reopen.i: reopen.c.i
 
 # target to preprocess a source file
 reopen.c.i:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/reopen.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/reopen.c.i
 .PHONY : reopen.c.i
 
 reopen.s: reopen.c.s
@@ -975,7 +975,7 @@ reopen.s: reopen.c.s
 
 # target to generate assembly for a file
 reopen.c.s:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/reopen.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/reopen.dir/build.make tests/CMakeFiles/reopen.dir/reopen.c.s
 .PHONY : reopen.c.s
 
 tearing.o: tearing.c.o
@@ -984,7 +984,7 @@ tearing.o: tearing.c.o
 
 # target to build an object file
 tearing.c.o:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/tearing.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/tearing.c.o
 .PHONY : tearing.c.o
 
 tearing.i: tearing.c.i
@@ -993,7 +993,7 @@ tearing.i: tearing.c.i
 
 # target to preprocess a source file
 tearing.c.i:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/tearing.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/tearing.c.i
 .PHONY : tearing.c.i
 
 tearing.s: tearing.c.s
@@ -1002,7 +1002,7 @@ tearing.s: tearing.c.s
 
 # target to generate assembly for a file
 tearing.c.s:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/tearing.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/tearing.dir/build.make tests/CMakeFiles/tearing.dir/tearing.c.s
 .PHONY : tearing.c.s
 
 threads.o: threads.c.o
@@ -1011,7 +1011,7 @@ threads.o: threads.c.o
 
 # target to build an object file
 threads.c.o:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/threads.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/threads.c.o
 .PHONY : threads.c.o
 
 threads.i: threads.c.i
@@ -1020,7 +1020,7 @@ threads.i: threads.c.i
 
 # target to preprocess a source file
 threads.c.i:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/threads.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/threads.c.i
 .PHONY : threads.c.i
 
 threads.s: threads.c.s
@@ -1029,7 +1029,7 @@ threads.s: threads.c.s
 
 # target to generate assembly for a file
 threads.c.s:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/threads.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/threads.dir/build.make tests/CMakeFiles/threads.dir/threads.c.s
 .PHONY : threads.c.s
 
 timeout.o: timeout.c.o
@@ -1038,7 +1038,7 @@ timeout.o: timeout.c.o
 
 # target to build an object file
 timeout.c.o:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/timeout.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/timeout.c.o
 .PHONY : timeout.c.o
 
 timeout.i: timeout.c.i
@@ -1047,7 +1047,7 @@ timeout.i: timeout.c.i
 
 # target to preprocess a source file
 timeout.c.i:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/timeout.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/timeout.c.i
 .PHONY : timeout.c.i
 
 timeout.s: timeout.c.s
@@ -1056,7 +1056,7 @@ timeout.s: timeout.c.s
 
 # target to generate assembly for a file
 timeout.c.s:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/timeout.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/timeout.dir/build.make tests/CMakeFiles/timeout.dir/timeout.c.s
 .PHONY : timeout.c.s
 
 title.o: title.c.o
@@ -1065,7 +1065,7 @@ title.o: title.c.o
 
 # target to build an object file
 title.c.o:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/title.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/title.c.o
 .PHONY : title.c.o
 
 title.i: title.c.i
@@ -1074,7 +1074,7 @@ title.i: title.c.i
 
 # target to preprocess a source file
 title.c.i:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/title.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/title.c.i
 .PHONY : title.c.i
 
 title.s: title.c.s
@@ -1083,7 +1083,7 @@ title.s: title.c.s
 
 # target to generate assembly for a file
 title.c.s:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/title.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/title.dir/build.make tests/CMakeFiles/title.dir/title.c.s
 .PHONY : title.c.s
 
 windows.o: windows.c.o
@@ -1092,7 +1092,7 @@ windows.o: windows.c.o
 
 # target to build an object file
 windows.c.o:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/windows.c.o
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/windows.c.o
 .PHONY : windows.c.o
 
 windows.i: windows.c.i
@@ -1101,7 +1101,7 @@ windows.i: windows.c.i
 
 # target to preprocess a source file
 windows.c.i:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/windows.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/windows.c.i
 .PHONY : windows.c.i
 
 windows.s: windows.c.s
@@ -1110,7 +1110,7 @@ windows.s: windows.c.s
 
 # target to generate assembly for a file
 windows.c.s:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/windows.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(MAKE) -f tests/CMakeFiles/windows.dir/build.make tests/CMakeFiles/windows.dir/windows.c.s
 .PHONY : windows.c.s
 
 # Help Target
@@ -1221,6 +1221,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -30,7 +30,7 @@ ImageLoader::ImageLoader(std::string file_path, int &width, int &height, int &nr
 
     //initializing ImageData using the image given
     stbi_set_flip_vertically_on_load(true);
-    this->ImageData = stbi_load(path, &width, &height, &nrChannels, 0);
+    this->ImageData = stbi_load(path, &width, &height, &nrChannels, STBI_rgb_alpha);
 }
 
 ImageLoader::~ImageLoader() {}

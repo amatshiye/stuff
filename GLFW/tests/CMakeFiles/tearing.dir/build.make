@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /goinfre/amatshiy/.brew/Cellar/cmake/3.12.0/bin/cmake
+CMAKE_COMMAND = /goinfre/amatshiy/.brew/Cellar/cmake/3.12.1/bin/cmake
 
 # The command to remove a file.
-RM = /goinfre/amatshiy/.brew/Cellar/cmake/3.12.0/bin/cmake -E remove -f
+RM = /goinfre/amatshiy/.brew/Cellar/cmake/3.12.1/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /goinfre/amatshiy/Desktop/glfw_tuts/GLFW
+CMAKE_SOURCE_DIR = /goinfre/amatshiy/Desktop/stuff/GLFW
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /goinfre/amatshiy/Desktop/glfw_tuts/GLFW
+CMAKE_BINARY_DIR = /goinfre/amatshiy/Desktop/stuff/GLFW
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/tearing.dir/depend.make
@@ -59,29 +59,29 @@ include tests/CMakeFiles/tearing.dir/flags.make
 
 tests/CMakeFiles/tearing.dir/tearing.c.o: tests/CMakeFiles/tearing.dir/flags.make
 tests/CMakeFiles/tearing.dir/tearing.c.o: tests/tearing.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/tearing.dir/tearing.c.o"
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tearing.dir/tearing.c.o   -c /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/tests/tearing.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/goinfre/amatshiy/Desktop/stuff/GLFW/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object tests/CMakeFiles/tearing.dir/tearing.c.o"
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tearing.dir/tearing.c.o   -c /goinfre/amatshiy/Desktop/stuff/GLFW/tests/tearing.c
 
 tests/CMakeFiles/tearing.dir/tearing.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tearing.dir/tearing.c.i"
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/tests/tearing.c > CMakeFiles/tearing.dir/tearing.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /goinfre/amatshiy/Desktop/stuff/GLFW/tests/tearing.c > CMakeFiles/tearing.dir/tearing.c.i
 
 tests/CMakeFiles/tearing.dir/tearing.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tearing.dir/tearing.c.s"
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/tests/tearing.c -o CMakeFiles/tearing.dir/tearing.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /goinfre/amatshiy/Desktop/stuff/GLFW/tests/tearing.c -o CMakeFiles/tearing.dir/tearing.c.s
 
 tests/CMakeFiles/tearing.dir/__/deps/glad.c.o: tests/CMakeFiles/tearing.dir/flags.make
 tests/CMakeFiles/tearing.dir/__/deps/glad.c.o: deps/glad.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object tests/CMakeFiles/tearing.dir/__/deps/glad.c.o"
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tearing.dir/__/deps/glad.c.o   -c /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/deps/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/goinfre/amatshiy/Desktop/stuff/GLFW/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object tests/CMakeFiles/tearing.dir/__/deps/glad.c.o"
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/tearing.dir/__/deps/glad.c.o   -c /goinfre/amatshiy/Desktop/stuff/GLFW/deps/glad.c
 
 tests/CMakeFiles/tearing.dir/__/deps/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/tearing.dir/__/deps/glad.c.i"
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/deps/glad.c > CMakeFiles/tearing.dir/__/deps/glad.c.i
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /goinfre/amatshiy/Desktop/stuff/GLFW/deps/glad.c > CMakeFiles/tearing.dir/__/deps/glad.c.i
 
 tests/CMakeFiles/tearing.dir/__/deps/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/tearing.dir/__/deps/glad.c.s"
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/deps/glad.c -o CMakeFiles/tearing.dir/__/deps/glad.c.s
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /goinfre/amatshiy/Desktop/stuff/GLFW/deps/glad.c -o CMakeFiles/tearing.dir/__/deps/glad.c.s
 
 # Object files for target tearing
 tearing_OBJECTS = \
@@ -96,8 +96,8 @@ tests/tearing.app/Contents/MacOS/tearing: tests/CMakeFiles/tearing.dir/__/deps/g
 tests/tearing.app/Contents/MacOS/tearing: tests/CMakeFiles/tearing.dir/build.make
 tests/tearing.app/Contents/MacOS/tearing: src/libglfw3.a
 tests/tearing.app/Contents/MacOS/tearing: tests/CMakeFiles/tearing.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable tearing.app/Contents/MacOS/tearing"
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tearing.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/goinfre/amatshiy/Desktop/stuff/GLFW/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable tearing.app/Contents/MacOS/tearing"
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tearing.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tests/CMakeFiles/tearing.dir/build: tests/tearing.app/Contents/MacOS/tearing
@@ -105,10 +105,10 @@ tests/CMakeFiles/tearing.dir/build: tests/tearing.app/Contents/MacOS/tearing
 .PHONY : tests/CMakeFiles/tearing.dir/build
 
 tests/CMakeFiles/tearing.dir/clean:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/tests && $(CMAKE_COMMAND) -P CMakeFiles/tearing.dir/cmake_clean.cmake
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW/tests && $(CMAKE_COMMAND) -P CMakeFiles/tearing.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/tearing.dir/clean
 
 tests/CMakeFiles/tearing.dir/depend:
-	cd /goinfre/amatshiy/Desktop/glfw_tuts/GLFW && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /goinfre/amatshiy/Desktop/glfw_tuts/GLFW /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/tests /goinfre/amatshiy/Desktop/glfw_tuts/GLFW /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/tests /goinfre/amatshiy/Desktop/glfw_tuts/GLFW/tests/CMakeFiles/tearing.dir/DependInfo.cmake --color=$(COLOR)
+	cd /goinfre/amatshiy/Desktop/stuff/GLFW && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /goinfre/amatshiy/Desktop/stuff/GLFW /goinfre/amatshiy/Desktop/stuff/GLFW/tests /goinfre/amatshiy/Desktop/stuff/GLFW /goinfre/amatshiy/Desktop/stuff/GLFW/tests /goinfre/amatshiy/Desktop/stuff/GLFW/tests/CMakeFiles/tearing.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/CMakeFiles/tearing.dir/depend
 

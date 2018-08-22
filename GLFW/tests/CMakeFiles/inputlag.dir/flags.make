@@ -6,5 +6,5 @@ C_FLAGS =
 
 C_DEFINES = 
 
-C_INCLUDES = -I/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/deps -I/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/include 
+C_INCLUDES = -I/goinfre/amatshiy/Desktop/stuff/GLFW/deps -I/goinfre/amatshiy/Desktop/stuff/GLFW/include 
 

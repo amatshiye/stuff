@@ -62,10 +62,10 @@ int	main()
 
     float vertices[] = {
         // positions          // colors           // texture coords
-        1.0f,  1.0f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f,   // top right
-        1.0f, -1.0f, 0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f,   // bottom right
-        -1.0f, -1.0f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f,   // bottom left
-        -1.0f,  1.0f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f    // top left
+        0.3f,  0.3f, 0.0f,   1.0f, 1.0f, 1.0f,   1.0f, 1.0f,   // top right
+        0.3f, 0.0f, 0.0f,   1.0f, 1.0f, 1.0f,   1.0f, 0.0f,   // bottom right
+        0.0f, 0.0f, 0.0f,   1.0f, 1.0f, 1.0f,   0.0f, 0.0f,   // bottom left
+        0.0f,  0.3f, 0.0f,   1.0f, 0.0f, 1.0f,   0.0f, 1.0f    // top left
     };
 
     unsigned int indices[] = {
@@ -102,28 +102,29 @@ int	main()
     glEnableVertexAttribArray(2);
 
     //load and create texture
-    unsigned int texture;
-    glGenTextures(1, &texture);
-    glBindTexture(GL_TEXTURE_2D, texture);
+    unsigned int *texture = new unsigned int[2];
+    glGenTextures(2, texture);
+    glBindTexture(GL_TEXTURE_2D, texture[0]);
 
     // set texture wrapping parameters
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 
     // set texture filtering parameters
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
     //load image, create texture and generate mipmaps
     int width, height, nrChannels;
 
     // creating image data
-    ImageLoader loader("player/head.jpg", width, height, nrChannels);
+    ImageLoader loader("player/front1.png", width, height, nrChannels);
     unsigned char * data = loader.getImageData();
     loader.freeImageData();
     if (data)
     {
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+        // glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
         glGenerateMipmap(GL_TEXTURE_2D);
     }
     else
@@ -131,14 +132,42 @@ int	main()
         std::cout << "Failed to load texture" << std::endl;
         exit(1);
     }
-    // stbi_image_free(data);
+
+    //SECOND TEXTURE
+    glBindTexture(GL_TEXTURE_2D, texture[1]);
+
+    // set texture wrapping parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+
+    // set texture filtering parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+    // creating image data
+    ImageLoader loader2("player/back1.png", width, height, nrChannels);
+    unsigned char * data2 = loader2.getImageData();
+    loader2.freeImageData();
+    if (data2)
+    {
+        // glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
+        glGenerateMipmap(GL_TEXTURE_2D);
+    }
+    else
+    {
+        std::cout << "Failed to load texture" << std::endl;
+        exit(1);
+    }
     
     // render loop
     // -----------
 	float h = 0.0f;
     float w = 0.0f;
+    unsigned int curTex = 0;
     while (!glfwWindowShouldClose(window))
     {
+        std::cout << "Current Texture: " << curTex << std::endl;
         // input
         // -----
         processInput(window);
@@ -148,11 +177,22 @@ int	main()
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        //bind texture
-        glBindTexture(GL_TEXTURE_2D, texture);
-
         // render Texture
-        glBindTexture(GL_TEXTURE_2D, texture);
+        if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)
+		{
+            // if (curTex != 1)
+            //     glBindTexture(GL_TEXTURE_2D, 0);
+            h += 0.01f;
+            curTex = 1;
+        }
+		if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)
+		{
+            // if (curTex != 0)
+            //     glBindTexture(GL_TEXTURE_2D, 0);
+            h -= 0.01f;
+            curTex = 0;
+        }
+        glBindTexture(GL_TEXTURE_2D, texture[curTex]);
 
         //render container
         ourShader.use();
@@ -182,16 +222,14 @@ int	main()
 
         glfwSwapBuffers(window);
         glfwPollEvents();
-		if (glfwGetKey(window, 265) == GLFW_PRESS)
-			h += 0.01f;
-		if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)
-			h -= 0.01f;
+		
         if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS)
 			w -= 0.01f;
         if (glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS)
 			w += 0.01f;
+        system("clear");
     }
-
+    glBindTexture(GL_TEXTURE_2D, 0);
     glDeleteVertexArrays(1, &VAO);
     glDeleteBuffers(1, &VBO);
 

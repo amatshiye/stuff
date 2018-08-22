@@ -6,5 +6,5 @@ C_FLAGS = -fPIC
 
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/include -I/goinfre/amatshiy/Desktop/glfw_tuts/GLFW/src 
+C_INCLUDES = -I/goinfre/amatshiy/Desktop/stuff/GLFW/include -I/goinfre/amatshiy/Desktop/stuff/GLFW/src 
 
