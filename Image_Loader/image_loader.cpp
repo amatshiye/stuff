@@ -6,7 +6,7 @@
 /*   By: amatshiy <amatshiy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/20 09:24:44 by amatshiy          #+#    #+#             */
-/*   Updated: 2018/08/22 08:43:26 by amatshiy         ###   ########.fr       */
+/*   Updated: 2018/08/22 15:02:19 by amatshiy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ ImageLoader::ImageLoader(std::string file_path, int &width, int &height, int &nr
 
     //initializing ImageData using the image given
     stbi_set_flip_vertically_on_load(true);
-    this->ImageData = stbi_load(path, &width, &height, &nrChannels, STBI_rgb_alpha);
+    this->ImageData = stbi_load(path, &width, &height, &nrChannels, 0);
 }
 
 ImageLoader::~ImageLoader() {}

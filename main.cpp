@@ -6,7 +6,7 @@
 /*   By: amatshiy <amatshiy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/15 07:59:13 by amatshiy          #+#    #+#             */
-/*   Updated: 2018/08/22 08:47:30 by amatshiy         ###   ########.fr       */
+/*   Updated: 2018/08/22 15:16:03 by amatshiy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -124,7 +124,7 @@ int	main()
     if (data)
     {
         // glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
         glGenerateMipmap(GL_TEXTURE_2D);
     }
     else
@@ -132,6 +132,7 @@ int	main()
         std::cout << "Failed to load texture" << std::endl;
         exit(1);
     }
+    glBindTexture(GL_TEXTURE_2D, 0);
 
     //SECOND TEXTURE
     glBindTexture(GL_TEXTURE_2D, texture[1]);
@@ -151,7 +152,7 @@ int	main()
     if (data2)
     {
         // glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data2);
         glGenerateMipmap(GL_TEXTURE_2D);
     }
     else
@@ -193,6 +194,7 @@ int	main()
             curTex = 0;
         }
         glBindTexture(GL_TEXTURE_2D, texture[curTex]);
+        glActiveTexture(GL_TEXTURE0 + curTex);
 
         //render container
         ourShader.use();
